@@ -76,6 +76,7 @@ const PrivateRouteConnected = connect(mapStateToProps, mapDispatchToProps)(Priva
 const mapDispatchToPropsStartup = (dispatch) => bindActionCreators({}, dispatch)
 
 const StartupConnected = withRouter(connect(() => ({}), mapDispatchToPropsStartup)(Startup))
+// eslint-disable-next-line react/display-name
 export default (props) => {
   return (
     <Provider store={store}>
